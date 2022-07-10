@@ -5,7 +5,7 @@ ADVENTURE - A simple website of a tourism agency for tourists.
  - This is a simple website.
  -  Pure HTML, CSS, JavaScript used
  
- ## Too see the project
+ ## To see the project
 [Tourism website](https://simple-tourism-organization.netlify.app/)
 
 ## Preview
