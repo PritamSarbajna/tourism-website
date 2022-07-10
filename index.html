@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADVENTURE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar">
+        <h1 class="logo">ADVENTURE</h1>
+        <ul class="nav-links">
+            <li class="active"><a href="#"></a>Home</li>
+            <li><a href="#"></a>Tours</li>
+            <li><a href="#"></a>Explore</li>
+            <li><a href="#"></a>About</li>
+            <li class="ctn"><a href="#"></a>Contact</li>
+        </ul>
+        <img src="./img/menu-btn.png" alt="" class="menu-btn">
+    </nav>
+    <!--navbar-->
+
+    <header>
+        <div class="header-content">
+            <h2>Explore the colourful World</h2>
+            <div class="line"></div>
+            <h1>A WONDERFUL GIFT</h1>
+            <a href="#" class="ctn">learn more</a>
+        </div>
+    </header>
+
+    <!--Events-->
+    <section class="events">
+        <div class="title">
+            <h1>Upcoming Events</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="./img/img1.jfif">
+                <h4>Everest camp trek</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus dolor eius cum itaque repellat asperiores.</p>
+                <a href="#" class="ctn">learn more</a>
+            </div>
+            <div class="col">
+                <img src="./img/img2.jfif">
+                <h4>Walking holidays</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus dolor eius cum itaque repellat asperiores.</p>
+                <a href="#" class="ctn">learn more</a>
+            </div>
+        </div>
+    </section>
+    <!--Events-->
+
+    <!--Explore-->
+    <section class="explore">
+        <div class="explore-content">
+            <h1>EXPLORE THE WORLD</h1>
+            <div class="line"></div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae labore voluptatum fuga id iusto cumque possimus asperiores eligendi quo laboriosam?</p>
+            <a href="#" class="ctn">learn more</a>
+        </div>
+    </section>
+    <!--Explore-->
+
+    <!--tours-->
+    <section class="tours">
+        <div class="row">
+            <div class="col content-col">
+                <h1>UPCOMING TOURS & DESTINATION</h1>
+                <div class="line"></div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, officia! Odio tempore quisquam voluptatibus? Odit laboriosam sunt reprehenderit voluptas ipsa aliquam ea ipsum aperiam corrupti nisi, alias optio perferendis sed?</p>
+                <a href="#" class="ctn">learn more</a>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <img src="./img/img3.png" alt="">
+                    <img src="./img/img4.png" alt="">
+                    <img src="./img/img5.png" alt="">
+                    <img src="./img/img6.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--tours-->
+
+    <!--footer-->
+    <section class="footer">
+        <p>Phone: +91 12345-67890 | Email: abc@gmail.com</p>
+        <span>Created By Pritam Sarbajna | &#169 2022 All rights reserved.</span>
+    </section>
+    <!--footer-->
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+</html>
