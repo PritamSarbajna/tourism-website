@@ -1,5 +1,5 @@
 # tourism-website
-ADVENTURE - A simple website of a tourism organization for tourists.
+ADVENTURE - A simple website of a tourism agency for tourists.
 
 ## About
  - This is a simple website.
