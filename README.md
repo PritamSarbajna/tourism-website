@@ -2,7 +2,7 @@
 ADVENTURE - A simple website of a tourism agency for tourists.
 
 ## About
- - This is a simple website.
+ -  This is a simple website
  -  Pure HTML, CSS, JavaScript used
  
  ## To see the project
