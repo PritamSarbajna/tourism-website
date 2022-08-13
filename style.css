@@ -1,6 +1,6 @@
 /* Google fonts */
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Work+Sans:wght@500&display=swap');
 
 /* Global */
 * {
@@ -22,11 +22,12 @@ span {
     padding: 0px 40px;
   }
 
-.active {
-  color: whitesmoke;
-  text-decoration: underline;
+/* .active {
+  color: #fc036b;
+  border-radius: 20px;
+  background: whitesmoke;
   font-weight: bold;
-}
+} */
 
 body,
 html {
@@ -43,17 +44,19 @@ html {
   background: gray;
   border-radius: 10px;
 }
-  
+ 
 
 /* Navbar */
 .navbar {
-  position: absolute;
+  position: fixed;
   top: 0;
+  background: #464646;
   left: 0;
   display: flex;
   width: 100%;
   justify-content: space-between;
   padding: 20px;
+  z-index: 10;
   color: whitesmoke;
 }
 
@@ -62,8 +65,24 @@ html {
   align-items: center;
 }
 
-.nav-links li {
-  margin: 0px 30px;
+.nav-links li{
+  margin: 0px 20px;
+}
+.nav-links li a {
+  color: white;
+}
+.nav-links li a:hover {
+  color: #fc036b;
+}
+.cir_border{
+  padding: 6px 20px;
+  border: 2px solid #464646;
+  font-weight: bold;
+}
+.cir_border:hover,.active{
+  border: 2px solid whitesmoke;
+  border-radius: 20px;
+  color: #fc036b;
 }
 
 header {
@@ -102,7 +121,7 @@ header {
 }
 
 .ctn {
-  padding: 8px 15px;
+  padding: 13px 50px;
   background: #fc036b;
   border-radius: 30px;
   color: whitesmoke;
@@ -160,7 +179,11 @@ p {
   color: #7c7c7c;
   padding: 0px 40px;
 }
-
+.col p{
+  color: #7c7c7c;
+  padding: 0px 30px;
+  text-align: justify;
+}
 .events .ctn {
   margin-top: 30px;
 }
@@ -240,6 +263,148 @@ p {
 .content-col .ctn {
     margin-left: -100px;
 }
+/* about */
+#about{
+  width: 100%;
+}
+#about_us{
+  background: url("https://awe365.com/wp-content/uploads/2013/07/adventure-sports-hang-gliding-flickrcc-image-by-Steve-Slater.jpg");
+  width: 100%;
+  height: 630px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 30px 0px 0px 0px;
+}
+#about_us p{
+  font-size: 18px;
+  width: 43em;
+  color: white;
+  text-align: justify;
+  padding-top: 14em;
+  font-family: 'Work Sans', sans-serif;
+}
+#about_us span{
+  padding: 0px 0px 0px 47px;
+  font-size: 55px;
+  color: #fc036b;
+}
+.social{
+  width:360px;
+  margin: 109px auto;
+  letter-spacing: 4px;
+}
+.social li{
+  list-style: none;
+}
+.social a{
+  font-size: 40px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px 10px;
+  box-shadow: 0px 0px 15px;
+}
+.social i{
+  padding-left: 4px;
+}
+.f{
+  padding: 12px;
+  padding-left: 10px;
+}
+.fa:hover{
+  color: #fc036b;
+}
+
+/* contact */
+#contact{
+  width: 90%;
+}
+.contact_us{
+  display: flex;
+}
+form{
+  width: 50%;
+}
+.cbox{
+  border: 3px solid black;
+  width: 45%;
+  margin-left: 70px;
+  margin-top: 35px;
+  padding: 0px 35px 30px 35px;
+}
+.c_boxx h4{
+  color: #fc036b;
+  font-size: 16px;
+  font-weight: 700;
+}
+.c_boxx a{
+  padding: 17px;
+  border: 2px solid #fc036b;
+  background-color: #fc036b;
+  color: white;
+  display: flex;
+  flex-direction: row;
+}
+.c_boxx a:hover{
+  background-color: white;
+  color: #fc036b;
+}
+.c_boxx i{
+  font-size: 38px;
+}
+.c_boxx a p{
+  font-size: 22px;
+  color: white;
+}
+.c_boxx a p:hover{
+  color: #fc036b;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 0px 0px 7px 6px;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: whitesmoke;
+  color: #fc036b;
+  padding: 12px 50px;
+  border: 2px solid #fc036b;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #fc036b;
+  color: whitesmoke;
+}
+.ccol {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.ccol {
+  float: left;
+  width: 100%;
+  margin-top: 6px;
+}
+.crow:after,.crow-s::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.crow-s{
+  padding-top: 14px;
+}
+
 
 /* footer */
 .footer {
@@ -263,69 +428,6 @@ p {
     padding: 20px auto;
 }
 
-/* Mobile device */
-@media only screen and (max-width: 850px) {
-  .menu-btn {
-    display: block;
-  }
-  .navbar {
-    padding: 0;
-  }
-  .logo {
-    position: absolute;
-    top: 30px;
-    left: 30px;
-  }
-  .nav-links {
-    flex-direction: column;
-    width: 100%;
-    height: 100vh;
-    justify-content: center;
-    background: #484872;
-    margin-top: -900px;
-    transition: all 0.5s ease;
-  }
-  .mobile-menu {
-    margin-top: 0px;
-    border-bottom-right-radius: 30%;
-  }
-  .nav-links li {
-    margin: 30px auto;
-  }
-
-  /*events*/
-  .row {
-    flex-direction: column;
-  }
-  .row .col {
-    margin: 20px auto;
-  }
-  .col img {
-    max-width: 90%;
-  }
-
-  /*explore*/
-  .explore-content {
-    width: 100%;
-  }
-
-  /*tours*/
-  .tours {
-    width: 100%;
-  }
-  .image-gallery {
-    justify-content: center;
-    align-items: center;
-  }
-  .image-gallery img {
-    width: 90%;
-  }
-
-  /*footer*/
-  .footer {
-    padding: 10px;
-  }
-}
 
 /* animations */
 img {
