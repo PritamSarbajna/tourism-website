@@ -1,0 +1,109 @@
+/* mobile responsiveness design */
+@media screen and (max-width: 990px) {
+    .contact_us {
+        flex-direction: column;
+        width: 100%;
+    }
+    form,
+    .cbox {
+        margin: auto;
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .menu-btn {
+        display: block;
+    }
+
+    .navbar {
+        padding: 45px;
+    }
+
+    .logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: #484872;
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+
+    .mobile-menu {
+        margin-top: 0px;
+        border-bottom-right-radius: 30%;
+    }
+
+    .nav-links li {
+        margin: 30px auto;
+    }
+
+    /*events*/
+    .row {
+        flex-direction: column;
+    }
+
+    .row .col {
+        margin: 20px auto;
+    }
+
+    .col img {
+        max-width: 90%;
+    }
+
+    /*explore*/
+    .explore-content {
+        width: 100%;
+    }
+
+    /*tours*/
+    .tours {
+        width: 100%;
+    }
+
+    .image-gallery {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-gallery img {
+        width: 90%;
+    }
+
+    /*footer*/
+    .footer {
+        padding: 10px;
+    }
+    .content-col{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 770px){
+    #about_us p{
+        width: 380px;
+        padding-top: 7em;
+        margin: auto;
+    }
+    form,.cbox{
+        width: 90%;
+    }
+    .ctn{
+        margin: auto;
+    }
+    .content-col .ctn {
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width:470px){
+    .ctn{
+        padding: 13px 25px;
+    }
+}
