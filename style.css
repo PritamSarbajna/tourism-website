@@ -50,15 +50,17 @@ html {
 .navbar {
   position: fixed;
   top: 0;
-  background: #464646;
   left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: saturate(180%) blur(10px);
   display: flex;
   width: 100%;
   justify-content: space-between;
-  padding: 20px;
+  padding: 10px;
   z-index: 10;
   color: whitesmoke;
 }
+
 
 .nav-links {
   display: flex;
@@ -76,7 +78,6 @@ html {
 }
 .cir_border{
   padding: 6px 20px;
-  border: 2px solid #464646;
   font-weight: bold;
 }
 .cir_border:hover,.active{
