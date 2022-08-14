@@ -51,7 +51,8 @@ html {
   position: fixed;
   top: 0;
   left: 0;
-  /* background-color: #464646; */
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: saturate(180%) blur(10px);
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -60,30 +61,7 @@ html {
   color: whitesmoke;
 }
 
-/* addding several glass effect */
-.glass{
-  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5);
-  background: rgba(128, 128, 128, 0.35);
-  backdrop-filter: blur(5px);
-  overflow: hidden;
-}
 
-/* .glass{
-  background: rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.10);
-  overflow: hidden;
-
-} */
- 
-/* .glass{
-  background: rgba(128, 128, 128, 0.40);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(5px);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
-  overflow: hidden;
-} */
-
-/* glass effect ends here */
 .nav-links {
   display: flex;
   align-items: center;
