@@ -100,7 +100,6 @@ html {
 }
 .cir_border{
   padding: 6px 20px;
-  border: 2px solid #464646;
   font-weight: bold;
 }
 .cir_border:hover,.active{
