@@ -300,6 +300,7 @@ p {
   color: #fc036b;
 }
 
+
 /* contact */
 #contact {
   width: 90%;
@@ -405,6 +406,7 @@ input[type=submit]:hover {
 }
 
 
+
 /* footer */
 .footer {
   width: 100%;
@@ -446,15 +448,15 @@ input[type=submit]:hover {
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.social a:hover {
+  background-color: #fc036b;
+
+}
+
 .social i {
   display: inline;
   text-align: center;
   color: whitesmoke;
-}
-
-
-.social a:hover {
-  background-color: #fc036b;
 }
 
 
