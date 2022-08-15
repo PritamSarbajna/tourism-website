@@ -18,9 +18,9 @@ ul {
 }
 
 span {
-    color: #7c7c7c;
-    padding: 0px 40px;
-  }
+  color: #7c7c7c;
+  padding: 0px 40px;
+}
 
 /* .active {
   color: #fc036b;
@@ -44,7 +44,7 @@ html {
   background: gray;
   border-radius: 10px;
 }
- 
+
 
 /* Navbar */
 .navbar {
@@ -67,20 +67,24 @@ html {
   align-items: center;
 }
 
-.nav-links li{
+.nav-links li {
   margin: 0px 20px;
 }
+
 .nav-links li a {
   color: white;
 }
+
 .nav-links li a:hover {
   color: #fc036b;
 }
-.cir_border{
+
+.cir_border {
   padding: 6px 20px;
   font-weight: bold;
 }
-.cir_border:hover,.active{
+
+.cir_border:hover, .active {
   border: 2px solid whitesmoke;
   border-radius: 20px;
   color: #fc036b;
@@ -180,11 +184,13 @@ p {
   color: #7c7c7c;
   padding: 0px 40px;
 }
-.col p{
+
+.col p {
   color: #7c7c7c;
   padding: 0px 30px;
   text-align: justify;
 }
+
 .events .ctn {
   margin-top: 30px;
 }
@@ -215,7 +221,7 @@ p {
 }
 
 .explore-content .line {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .explore-content p {
@@ -223,52 +229,54 @@ p {
 }
 
 .explore-content .ctn {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 /* tours */
 .content-col {
-    width: 40%;
+  width: 40%;
 }
 
 .image-col {
-    width: 60%;
+  width: 60%;
 }
 
 .tours .image-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
 }
 
 .image-gallery img {
-    max-width: 250px;
-    margin: 10px;
+  max-width: 250px;
+  margin: 10px;
 }
 
 .content-col h1 {
-    font-size: 6vmin;
-    color: #484872;
+  font-size: 6vmin;
+  color: #484872;
 }
 
 .content-col .line {
-    margin-left: -1px;
+  margin-left: -1px;
 }
 
 .content-col p {
-    padding: 0;
-    margin: 30px auto;
+  padding: 0;
+  margin: 30px auto;
 }
 
 .content-col .ctn {
-    margin-left: -100px;
+  margin-left: -100px;
 }
+
 /* about */
-#about{
+#about {
   width: 100%;
 }
-#about_us{
+
+#about_us {
   background: url("https://awe365.com/wp-content/uploads/2013/07/adventure-sports-hang-gliding-flickrcc-image-by-Steve-Slater.jpg");
   width: 100%;
   height: 630px;
@@ -276,7 +284,8 @@ p {
   background-size: cover;
   margin: 30px 0px 0px 0px;
 }
-#about_us p{
+
+#about_us p {
   font-size: 18px;
   width: 43em;
   color: white;
@@ -284,60 +293,41 @@ p {
   padding-top: 14em;
   font-family: 'Work Sans', sans-serif;
 }
-#about_us span{
+
+#about_us span {
   padding: 0px 0px 0px 47px;
   font-size: 55px;
   color: #fc036b;
 }
-.social{
-  width:360px;
-  margin: 109px auto;
-  letter-spacing: 4px;
-}
-.social li{
-  list-style: none;
-}
-.social a{
-  font-size: 40px;
-  background-color: white;
-  border-radius: 50%;
-  padding: 10px 10px;
-  box-shadow: 0px 0px 15px;
-}
-.social i{
-  padding-left: 4px;
-}
-.f{
-  padding: 12px;
-  padding-left: 10px;
-}
-.fa:hover{
-  color: #fc036b;
-}
 
 /* contact */
-#contact{
+#contact {
   width: 90%;
 }
-.contact_us{
+
+.contact_us {
   display: flex;
 }
-form{
+
+form {
   width: 50%;
 }
-.cbox{
+
+.cbox {
   border: 3px solid black;
   width: 45%;
   margin-left: 70px;
   margin-top: 35px;
   padding: 0px 35px 30px 35px;
 }
-.c_boxx h4{
+
+.c_boxx h4 {
   color: #fc036b;
   font-size: 16px;
   font-weight: 700;
 }
-.c_boxx a{
+
+.c_boxx a {
   padding: 17px;
   border: 2px solid #fc036b;
   background-color: #fc036b;
@@ -345,20 +335,25 @@ form{
   display: flex;
   flex-direction: row;
 }
-.c_boxx a:hover{
+
+.c_boxx a:hover {
   background-color: white;
   color: #fc036b;
 }
-.c_boxx i{
+
+.c_boxx i {
   font-size: 38px;
 }
-.c_boxx a p{
+
+.c_boxx a p {
   font-size: 22px;
   color: white;
 }
-.c_boxx a p:hover{
+
+.c_boxx a p:hover {
   color: #fc036b;
 }
+
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
@@ -386,6 +381,7 @@ input[type=submit]:hover {
   background-color: #fc036b;
   color: whitesmoke;
 }
+
 .ccol {
   float: left;
   width: 25%;
@@ -397,53 +393,88 @@ input[type=submit]:hover {
   width: 100%;
   margin-top: 6px;
 }
-.crow:after,.crow-s::after {
+
+.crow:after, .crow-s::after {
   content: "";
   display: table;
   clear: both;
 }
-.crow-s{
+
+.crow-s {
   padding-top: 14px;
 }
 
 
 /* footer */
 .footer {
-    width: 100%;
-    min-height: 100px;
-    padding: 20px 80px;
-    margin: 0;
-    background: #484872;
-    text-align: center;
+  width: 100%;
+  min-height: 100px;
+  padding: 20px 80px;
+  margin: 0;
+  background: #222;
+  text-align: center;
 }
 
 .footer p {
-    color: whitesmoke;
-    margin: 20px auto;
-    padding: 20px auto;
+  color: whitesmoke;
+  margin: 20px auto;
+  padding: 20px auto;
 }
 
 .footer span {
-    color: whitesmoke;
-    margin: 20px auto;
-    padding: 20px auto;
+  display: block;
+  color: whitesmoke;
+  padding: 20px auto;
+}
+
+
+.social {
+  width: 360px;
+  margin: 30px auto;
+}
+
+.social li {
+  list-style: none;
+}
+
+.social a {
+  margin-right: 10px;
+  font-size: 18px;
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 5px 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.social i {
+  display: inline;
+  text-align: center;
+  color: whitesmoke;
+}
+
+
+.social a:hover {
+  background-color: #fc036b;
 }
 
 
 /* animations */
 img {
-    transition: transform .3s ease;
+  transition: transform .3s ease;
 
 }
+
 img:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
+
 .ctn:hover {
-    background: whitesmoke;
-    color: #fc036b;
-    box-shadow: 2px 2px 5px #00000056;
+  background: whitesmoke;
+  color: #fc036b;
+  box-shadow: 2px 2px 5px #00000056;
 }
+
 li:hover {
-    color: #fc036b;
-    cursor: pointer;
+  color: #fc036b;
+  cursor: pointer;
 }
