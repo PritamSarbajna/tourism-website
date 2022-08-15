@@ -47,6 +47,7 @@ html {
 
 
 /* Navbar */
+
 .navbar {
   position: fixed;
   top: 0;
@@ -56,6 +57,7 @@ html {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  align-items: center;
   padding: 10px;
   z-index: 10;
   color: whitesmoke;
