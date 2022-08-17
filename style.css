@@ -108,14 +108,12 @@ html {
 	cursor: pointer;
 }
 
-
 .cir_border {
-  padding: 6px 20px;
-  font-weight: bold;
-  border: 2px hidden whitesmoke;
-  border-radius: 20px;
+	padding: 6px 20px;
+	font-weight: bold;
+	border: 2px hidden whitesmoke;
+	border-radius: 20px;
 }
-
 
 header {
 	width: 100vw;
@@ -125,30 +123,18 @@ header {
 	background-attachment: fixed;
 	background-size: cover;
 	display: flex;
-	align-items: center;
+	align-items: end;
 	justify-content: center;
-	position: relative;
 }
 
 .header-content {
-	position: relative;
 	font-family: var(--ff-lora);
 	letter-spacing: 0.5rem;
 	color: whitesmoke;
 	text-align: center;
 	z-index: 1;
 	padding: 4rem;
-}
-
-.header-content::after {
-	content: '';
-	position: absolute;
-	inset: 0;
-	z-index: -1;
-	display: block;
-	background: rgba(0, 0, 0, 0.2);
-	backdrop-filter: blur(2.5px);
-	border-radius: 0.5rem;
+	margin-bottom: 150px;
 }
 
 .header-content a {
@@ -291,6 +277,7 @@ p {
 	background: rgba(0, 0, 0, 0.2);
 	backdrop-filter: blur(2.5px);
 	border-radius: 0.5rem;
+	border: 2px solid red;
 }
 
 .explore-content h1 {
@@ -547,8 +534,7 @@ input[type='submit']:hover {
 }
 
 .social a:hover {
-  background-color: #fc036b;
-  
+	background-color: #fc036b;
 }
 
 .social i {
@@ -566,22 +552,23 @@ img:hover {
 	transform: scale(1.1);
 }
 
-.cir_border:hover, .active{
-  border: 2px solid whitesmoke;
-  border-radius: 20px;
-  color: #fc036b;
-  cursor: pointer;
+.cir_border:hover,
+.active {
+	border: 2px solid whitesmoke;
+	border-radius: 20px;
+	color: #fc036b;
+	cursor: pointer;
 }
-.cir_border:hover a{
-  color: #fc036b;
+.cir_border:hover a {
+	color: #fc036b;
 }
 .ctn:hover {
-  background: whitesmoke;
-  color: #fc036b;
-  box-shadow: 2px 2px 5px #00000056;
-  cursor: pointer;
+	background: whitesmoke;
+	color: #fc036b;
+	box-shadow: 2px 2px 5px #00000056;
+	cursor: pointer;
 }
 
-.nav-links .ctn:hover a{
-  color: #fc036b;
+.nav-links .ctn:hover a {
+	color: #fc036b;
 }
