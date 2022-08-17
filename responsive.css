@@ -99,22 +99,33 @@
 	.ctn {
 		margin: auto;
 	}
-	.content-col .ctn {
-		margin: 0 auto;
-	}
 
 	.explore-content {
 		margin: 0 auto;
 		text-align: center;
-		padding: 0;
+		width: 80%;
 	}
 
 	.explore-content .ctn {
-		margin-right: 0;
+		margin: 40px auto;
 	}
 }
 @media screen and (max-width: 470px) {
 	.ctn {
 		padding: 13px 25px;
+	}
+}
+
+@media (max-width: 850px) {
+	.content-col {
+		text-align: center;
+	}
+	.content-col .line {
+		margin: 0.5rem auto;
+	}
+
+	.content-col .ctn {
+		margin: 0 auto;
+		position: inherit;
 	}
 }
