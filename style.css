@@ -108,17 +108,14 @@ html {
 	cursor: pointer;
 }
 
+
 .cir_border {
-	padding: 6px 20px;
-	font-weight: bold;
+  padding: 6px 20px;
+  font-weight: bold;
+  border: 2px hidden whitesmoke;
+  border-radius: 20px;
 }
 
-.cir_border:hover,
-.active {
-	border: 2px solid whitesmoke;
-	border-radius: 20px;
-	color: #fc036b;
-}
 
 header {
 	width: 100vw;
@@ -550,7 +547,8 @@ input[type='submit']:hover {
 }
 
 .social a:hover {
-	background-color: #fc036b;
+  background-color: #fc036b;
+  
 }
 
 .social i {
@@ -568,23 +566,22 @@ img:hover {
 	transform: scale(1.1);
 }
 
-.cir_border:hover,
-.active {
-	border: 2px solid whitesmoke;
-	border-radius: 20px;
-	color: #fc036b;
-	cursor: pointer;
+.cir_border:hover, .active{
+  border: 2px solid whitesmoke;
+  border-radius: 20px;
+  color: #fc036b;
+  cursor: pointer;
 }
-.cir_border:hover a {
-	color: #fc036b;
+.cir_border:hover a{
+  color: #fc036b;
 }
 .ctn:hover {
-	background: whitesmoke;
-	color: #fc036b;
-	box-shadow: 2px 2px 5px #00000056;
-	cursor: pointer;
+  background: whitesmoke;
+  color: #fc036b;
+  box-shadow: 2px 2px 5px #00000056;
+  cursor: pointer;
 }
 
-.nav-links .ctn:hover a {
-	color: #fc036b;
+.nav-links .ctn:hover a{
+  color: #fc036b;
 }
