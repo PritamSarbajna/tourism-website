@@ -33,7 +33,10 @@ body,
 html {
   overflow-x: hidden;
 }
-
+/* Font */
+.font{
+  font-family: 'Bree Serif', serif;
+}
 /*scrollbar*/
 
 ::-webkit-scrollbar {
@@ -88,12 +91,14 @@ html {
 header {
   width: 100vw;
   height: 100vh;
-  background-image: url("./img/header-bg.jfif");
+  /* background-image: url("./img/header-bg.jfif"); */
+  background-image: url("./img/mountains-1761292.jpg");
   background-position: bottom;
   background-size: cover;
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  opacity: 0.98;
 }
 
 .header-content {
@@ -304,6 +309,12 @@ p {
 
 .contact_us {
   display: flex;
+  content: "";
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.5;
+  background-image: url(./img/contact.webp) no-repeat center center/cover;
 }
 
 form {
