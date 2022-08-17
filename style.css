@@ -277,7 +277,6 @@ p {
 	background: rgba(0, 0, 0, 0.2);
 	backdrop-filter: blur(2.5px);
 	border-radius: 0.5rem;
-	border: 2px solid red;
 }
 
 .explore-content h1 {
