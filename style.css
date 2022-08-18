@@ -303,25 +303,14 @@ p {
 }
 
 /* tours */
-.image-col {
-	width: 60%;
-}
-
-.tours .image-gallery {
-	display: flex;
-	flex-wrap: wrap;
-	width: 100%;
-	align-items: center;
-	justify-content: start;
+.image-gallery {
+	display: grid;
+	gap: 1.8rem 1rem;
+	grid-template-columns: repeat(2, 1fr);
 }
 
 .tours .row {
 	gap: 4rem;
-}
-
-.image-gallery img {
-	max-width: 250px;
-	margin: 10px;
 }
 
 .content-col {
