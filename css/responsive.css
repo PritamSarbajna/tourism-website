@@ -68,14 +68,9 @@
 		width: 100%;
 	}
 
-	.image-gallery {
-		justify-content: center;
-		align-items: center;
-	}
-
-	.image-gallery img {
+	/* .image-gallery img {
 		width: 90%;
-	}
+	} */
 
 	/*footer*/
 	.footer {

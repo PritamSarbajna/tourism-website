@@ -26,6 +26,11 @@
 	box-sizing: inherit;
 }
 
+img {
+	max-width: 100%;
+	display: block;
+}
+
 a {
 	text-decoration: none;
 }
@@ -307,6 +312,8 @@ p {
 	display: grid;
 	gap: 1.8rem 1rem;
 	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	padding: 1rem;
 }
 
 .tours .row {
