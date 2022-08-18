@@ -34,6 +34,10 @@ html {
   overflow-x: hidden;
 }
 
+body{
+  background-color:#030205;
+}
+
 /*scrollbar*/
 
 ::-webkit-scrollbar {
@@ -50,7 +54,7 @@ html {
 .navbar {
   position: fixed;
   top: 0;
-  background: #464646;
+  background: #030205;
   left: 0;
   display: flex;
   width: 100%;
@@ -76,7 +80,6 @@ html {
 }
 .cir_border{
   padding: 6px 20px;
-  border: 2px solid #464646;
   font-weight: bold;
 }
 .cir_border:hover,.active{
@@ -88,7 +91,7 @@ html {
 header {
   width: 100vw;
   height: 100vh;
-  background-image: url("./img/header-bg.jfif");
+  background-image:url("./img/bg.png");
   background-position: bottom;
   background-size: cover;
   display: flex;
@@ -248,7 +251,6 @@ p {
 
 .content-col h1 {
     font-size: 6vmin;
-    color: #484872;
 }
 
 .content-col .line {
@@ -445,4 +447,8 @@ img:hover {
 li:hover {
     color: #fc036b;
     cursor: pointer;
+}
+
+.font-color{
+  color:#fff;
 }
