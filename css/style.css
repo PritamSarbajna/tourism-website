@@ -118,7 +118,7 @@ html {
 header {
 	width: 100vw;
 	height: 100vh;
-	background-image: url('./img/header-bg.jfif');
+	background-image: url('../img/header-bg.jfif');
 	background-position: bottom;
 	background-attachment: fixed;
 	background-size: cover;
@@ -247,7 +247,7 @@ p {
 .explore {
 	width: 100%;
 	height: 100vh;
-	background-image: url(./img/bg2.png);
+	background-image: url(../img/bg2.png);
 	background-attachment: fixed;
 	background-position: center;
 	background-size: cover;
