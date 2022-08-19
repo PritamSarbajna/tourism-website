@@ -21,17 +21,29 @@
 # Steps To Work
 
     Fork the repo and clone it on your machine.
+    
     Add a upstream link to main branch in your cloned repo
+    
     git remote add upstream https://github.com/PritamSarbajna/tourism-website.git
+    
     Keep your cloned repo upto date by pulling from upstream (this will also avoid any merge conflicts while committing new changes)
+    
     git pull upstream main
+    
     Create your feature branch
+    
     git checkout -b <feature-name>
+    
     Commit all the changes
+    
     git commit -m "Meaningful commit message"
+    
     Push the changes for review
+    
     git push origin HEAD
+    
     Create a PR from our repo on Github.
+    
 
 # Additional Notes
 
