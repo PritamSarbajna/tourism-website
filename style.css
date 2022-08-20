@@ -1,6 +1,9 @@
 /* Google fonts */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Work+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
 
 /* Global */
 * {
@@ -271,7 +274,7 @@ p {
   width: 100%;
 }
 
-#about_us {
+#about_us {  
   background: url("https://awe365.com/wp-content/uploads/2013/07/adventure-sports-hang-gliding-flickrcc-image-by-Steve-Slater.jpg");
   width: 100%;
   height: 630px;
@@ -294,6 +297,63 @@ p {
   font-size: 55px;
   color: #fc036b;
 }
+
+
+/* Contributors */
+.contributors{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 0px;
+    padding: 5em 2em;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 100vh;
+    flex-direction: row;
+    background: linear-gradient(45deg, #fbda61, #fc036b);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card{
+    background-color: #ffff;
+    height: 20em;
+    width: 15em;
+    border-radius: 20px;
+    margin: 0.5em 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .pfp{
+    width: 50%;
+    border-radius: 100%;
+}
+.text{
+    margin: 1em 0em 0em 0em;
+    text-align: center;
+    font-size: 0.9em;
+}
+.text h1{
+    font-weight: 900;
+}
+.logolink{
+    margin: 2em 0em 0em 0em;
+    width: 25%;
+}
+.logolink img{
+    border-radius: 100%;
+    }
+.logolink img:hover{
+  background-color: rgba(0, 0, 0, 0.243);
+    background: linear-gradient(45deg, #fbda61, #ff5acd);
+
+}
+.logolink .github-logo{
+    width: 100%;
+}
+
 
 
 /* contact */
