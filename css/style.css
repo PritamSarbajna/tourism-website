@@ -1,0 +1,569 @@
+/* Google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;800&family=Parisienne&family=Roboto&display=swap');
+
+/* Root element (aka html) */
+:root {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+
+	/* CSS Variables */
+	/* Fonts */
+	--ff-parisienne: 'Parisienne', cursive;
+	--ff-montserrat: 'Montserrat', sans-serif;
+	--ff-lora: 'Lora', serif;
+	--ff-roboto: 'Roboto', sans-serif;
+	--fs-paragraphs: calc(0.8rem + 0.35vw);
+	--fs-links-btns: calc(0.65rem + 0.5vw);
+}
+
+/* Global */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+span {
+	color: #7c7c7c;
+	padding: 0px 40px;
+}
+
+/* .active {
+  color: #fc036b;
+  border-radius: 20px;
+  background: whitesmoke;
+  font-weight: bold;
+} */
+
+body,
+html {
+	overflow-x: hidden;
+}
+
+.container {
+	width: 98%;
+	max-width: 91rem;
+	margin: 0 auto;
+}
+
+/*scrollbar*/
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: gray;
+	border-radius: 10px;
+}
+
+/* Navbar */
+
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.2);
+	backdrop-filter: saturate(180%) blur(10px);
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px;
+	z-index: 10;
+	color: whitesmoke;
+}
+
+.logo {
+	font-family: var(--ff-parisienne);
+	font-size: 3.5rem;
+	text-transform: lowercase;
+	letter-spacing: 0.4rem;
+	padding: 0 1.2rem;
+}
+
+.nav-links {
+	display: flex;
+	align-items: center;
+}
+
+.nav-links li {
+	font-family: var(--ff-montserrat);
+	margin: 0px 15px;
+}
+
+.nav-links li a {
+	color: white;
+	cursor: pointer;
+}
+
+.cir_border {
+	padding: 6px 20px;
+	font-weight: bold;
+	border: 2px hidden whitesmoke;
+	border-radius: 20px;
+}
+
+header {
+	width: 100vw;
+	height: 100vh;
+	background-image: url('../img/header-bg.jfif');
+	background-position: bottom;
+	background-attachment: fixed;
+	background-size: cover;
+	display: flex;
+	align-items: end;
+	justify-content: center;
+}
+
+.header-content {
+	font-family: var(--ff-lora);
+	letter-spacing: 0.5rem;
+	color: whitesmoke;
+	text-align: center;
+	z-index: 1;
+	padding: 4rem;
+	margin-bottom: 150px;
+}
+
+.header-content a {
+	letter-spacing: 0.1rem;
+}
+
+.header-content h2 {
+	font-size: 4vmin;
+}
+
+.line {
+	width: 150px;
+	height: 4px;
+	background: #fc036b;
+	margin: 10px auto;
+	border-radius: 5px;
+}
+
+.header-content h1 {
+	font-size: 7vmin;
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+.ctn {
+	font-family: var(--ff-montserrat);
+	font-size: var(--fs-links-btns);
+	font-weight: 700;
+	padding: 13px 50px;
+	background: #fc036b;
+	border-radius: 30px;
+	color: whitesmoke;
+}
+
+.menu-btn {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	width: 40px;
+	cursor: pointer;
+	display: none;
+}
+
+/* Events */
+section {
+	width: 80%;
+	margin: 80px auto;
+}
+
+.title {
+	text-align: center;
+	font-family: var(--ff-montserrat);
+	font-size: 4vmin;
+	color: rgb(73, 73, 126);
+}
+
+.row {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.card {
+	cursor: pointer;
+}
+
+.row .col {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 10px;
+}
+
+.row .col img {
+	width: 90%;
+}
+
+.events .row {
+	margin-top: 50px;
+}
+
+.col > h4 {
+	font-size: calc(1rem + 0.5vw);
+	color: #484872;
+	margin: 20px auto;
+	font-family: var(--ff-lora);
+}
+
+p {
+	color: #7c7c7c;
+	padding: 0px 40px;
+	font-size: var(--fs-paragraphs);
+	font-family: var(--ff-roboto);
+}
+
+.col > p {
+	color: #7c7c7c;
+	padding: 0;
+	line-height: 1.5;
+	text-align: center;
+	max-width: 35ch;
+}
+
+.events .ctn {
+	margin-top: 30px;
+}
+
+/* explore */
+.explore {
+	width: 100%;
+	height: 100vh;
+	background-image: url(../img/bg2.png);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+}
+
+.explore-content {
+	font-family: var(--ff-lora);
+	color: whitesmoke;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-left: 8rem;
+	position: relative;
+	z-index: 1;
+	padding: 2rem 0;
+}
+
+.explore-content::after {
+	content: '';
+	position: absolute;
+	inset: 0;
+	z-index: -1;
+	display: block;
+	background: rgba(0, 0, 0, 0.2);
+	backdrop-filter: blur(2.5px);
+	border-radius: 0.5rem;
+}
+
+.explore-content h1 {
+	width: 100%;
+	font-size: calc(2.2rem + 1vw);
+	letter-spacing: 0.3rem;
+	margin-left: 4.5rem;
+}
+
+.explore-content .line {
+	margin-bottom: 50px;
+}
+
+.explore-content p {
+	color: rgb(221, 221, 221);
+	max-width: 65ch;
+	line-height: 1.5;
+	text-align: left;
+}
+
+.explore-content .ctn {
+	margin-top: 40px;
+	margin-right: 28rem;
+}
+
+/* tours */
+.image-gallery {
+	display: grid;
+	gap: 1.8rem 1rem;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	padding: 1rem;
+}
+
+.tours .row {
+	gap: 4rem;
+}
+
+.content-col {
+	position: relative;
+}
+
+.content-col h1 {
+	font-size: calc(2.2rem + 1vw);
+	font-family: var(--ff-lora);
+	max-width: 15.5ch;
+	color: #484872;
+}
+
+.content-col .line {
+	margin-left: 0;
+}
+
+.content-col p {
+	padding: 0;
+	margin: 30px 0;
+	width: 100%;
+	text-align: left;
+	max-width: 40ch;
+}
+
+.content-col .ctn {
+	position: absolute;
+	left: 0;
+	bottom: -14%;
+}
+
+/* about */
+#about {
+	width: 100%;
+}
+
+#about_us {
+	background: url('https://awe365.com/wp-content/uploads/2013/07/adventure-sports-hang-gliding-flickrcc-image-by-Steve-Slater.jpg');
+	width: 100%;
+	height: 630px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	margin: 30px 0px 0px 0px;
+}
+
+#about_us p {
+	width: 43em;
+	color: white;
+	text-align: justify;
+	padding-top: 14em;
+	font-family: 'Work Sans', sans-serif;
+}
+
+#about_us p::first-letter {
+	padding-left: 47px;
+	font-size: 55px;
+	color: #fc036b;
+}
+
+/* contact */
+#contact {
+	width: 90%;
+}
+
+.contact_us {
+	display: flex;
+	font-family: var(--ff-roboto);
+}
+
+form {
+	width: 50%;
+}
+
+.cbox {
+	border: 3px solid black;
+	width: 45%;
+	margin-left: 70px;
+	margin-top: 35px;
+	padding: 10px 30px;
+}
+
+.c_boxx h4 {
+	color: #fc036b;
+	font-size: 16px;
+	font-weight: 700;
+	padding: 1rem 0;
+}
+
+.c_boxx a {
+	padding: 17px;
+	border: 2px solid #fc036b;
+	background-color: #fc036b;
+	color: white;
+	display: flex;
+	flex-direction: row;
+}
+
+.c_boxx a:hover {
+	background-color: white;
+	color: #fc036b;
+}
+
+.c_boxx i {
+	font-size: 38px;
+}
+
+.c_boxx a p {
+	font-size: 22px;
+	color: white;
+}
+
+.c_boxx a p:hover {
+	color: #fc036b;
+}
+
+input[type='text'],
+select,
+textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: vertical;
+}
+
+label {
+	padding: 0px 0px 7px 6px;
+	display: inline-block;
+}
+
+input[type='submit'] {
+	background-color: whitesmoke;
+	color: #fc036b;
+	padding: 12px 50px;
+	border: 2px solid #fc036b;
+	border-radius: 100vmax;
+	cursor: pointer;
+	font-family: var(--ff-montserrat);
+	font-size: var(--fs-links-btns);
+}
+
+input[type='submit']:hover {
+	background-color: #fc036b;
+	color: whitesmoke;
+}
+
+.ccol {
+	float: left;
+	width: 25%;
+	margin-top: 6px;
+}
+
+.ccol {
+	float: left;
+	width: 100%;
+	margin-top: 6px;
+}
+
+.crow:after,
+.crow-s::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.crow-s {
+	padding-top: 14px;
+}
+
+/* footer */
+.footer {
+	width: 100%;
+	min-height: 100px;
+	padding: 20px 80px;
+	margin: 0;
+	background: #222;
+	text-align: center;
+}
+
+.footer p {
+	color: whitesmoke;
+	margin: 20px auto;
+	padding: 20px auto;
+}
+
+.footer span {
+	display: block;
+	color: whitesmoke;
+	padding: 20px auto;
+}
+
+.social {
+	width: 360px;
+	margin: 30px auto;
+}
+
+.social li {
+	list-style: none;
+}
+
+.social a {
+	margin-right: 10px;
+	font-size: 18px;
+	background-color: transparent;
+	border-radius: 50%;
+	padding: 5px 8px;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.social a:hover {
+	background-color: #fc036b;
+}
+
+.social i {
+	display: inline;
+	text-align: center;
+	color: whitesmoke;
+}
+
+/* animations */
+img {
+	transition: transform 0.3s ease;
+}
+
+img:hover {
+	transform: scale(1.1);
+}
+
+.cir_border:hover,
+.active {
+	border: 2px solid whitesmoke;
+	border-radius: 20px;
+	color: #fc036b;
+	cursor: pointer;
+}
+.cir_border:hover a {
+	color: #fc036b;
+}
+.ctn:hover {
+	background: whitesmoke;
+	color: #fc036b;
+	box-shadow: 2px 2px 5px #00000056;
+	cursor: pointer;
+}
+
+.nav-links .ctn:hover a {
+	color: #fc036b;
+}
