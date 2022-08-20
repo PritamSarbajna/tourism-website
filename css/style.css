@@ -54,6 +54,7 @@ span {
 body,
 html {
 	overflow-x: hidden;
+	box-sizing: border-box;
 }
 
 .container {
@@ -123,7 +124,7 @@ html {
 header {
 	width: 100vw;
 	height: 100vh;
-	background-image: url('../img/header-bg.jfif');
+	background-image: url('../img/bg.png');
 	background-position: bottom;
 	background-attachment: fixed;
 	background-size: cover;
@@ -224,7 +225,7 @@ section {
 
 .col > h4 {
 	font-size: calc(1rem + 0.5vw);
-	color: #484872;
+	color: #fff;
 	margin: 20px auto;
 	font-family: var(--ff-lora);
 }
@@ -328,7 +329,6 @@ p {
 	font-size: calc(2.2rem + 1vw);
 	font-family: var(--ff-lora);
 	max-width: 15.5ch;
-	color: #484872;
 }
 
 .content-col .line {
@@ -566,4 +566,13 @@ img:hover {
 
 .nav-links .ctn:hover a {
 	color: #fc036b;
+}
+
+body {
+	background-color: black;
+	color: white;
+  }
+
+.font-color{
+	color: white;
 }
