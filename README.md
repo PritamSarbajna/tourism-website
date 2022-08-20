@@ -10,6 +10,6 @@ ADVENTURE - A simple website of a tourism agency for tourists.
 
 ## Preview
 
-<img src="https://user-images.githubusercontent.com/90236635/178133041-66ef4697-c043-4c35-b3b5-e6e759ed9ce1.gif" width="75%">
-<img src="https://user-images.githubusercontent.com/90236635/178132476-3598a391-c897-4d3f-ae29-f94170e5f99f.png" width="75%">
-<img src="https://user-images.githubusercontent.com/90236635/178132479-ebf8eb22-a0e7-43b9-adac-548b558b9a61.png" width="75%">
+<img src="https://user-images.githubusercontent.com/81079566/185714633-9f7395be-e19e-4c30-8cbc-d82ce31b5d15.gif" width="75%">
+<img src="https://user-images.githubusercontent.com/81079566/185711910-b5d48870-da96-44dd-a4d1-0a6c681f1ceb.png" width="75%">
+<img src="https://user-images.githubusercontent.com/81079566/185712453-ca03374c-1167-4175-a344-cdacd95cd268.png" width="75%">
