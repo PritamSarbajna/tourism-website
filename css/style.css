@@ -229,7 +229,7 @@ section {
 	font-family: var(--ff-lora);
 }
 
-p {
+.col p {
 	color: #7c7c7c;
 	padding: 0px 40px;
 	font-size: var(--fs-paragraphs);
@@ -427,12 +427,12 @@ form {
 
 .c_boxx a p {
 	font-size: 22px;
-	color: white;
+	padding: 0px 40px;
 }
 
-.c_boxx a p:hover {
+/* .c_boxx a p:hover {
 	color: #fc036b;
-}
+}   */
 
 input[type='text'],
 select,
