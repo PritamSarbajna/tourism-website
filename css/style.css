@@ -54,6 +54,7 @@ span {
 body,
 html {
 	overflow-x: hidden;
+	box-sizing: border-box;
 }
 
 .container {
