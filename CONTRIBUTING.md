@@ -60,6 +60,11 @@
     Be specific!
     Give sample code if you can.
     Notes (possibly including why you think this might be happening, or stuff you tried that didn't work)
+    
+# Contributing
+
+We love pull requests from everyone. By participating in this project, you
+agree to abide by the [Code Of Conduct](https://github.com/PritamSarbajna/tourism-website/blob/main/CODE_OF_CONDUCT.md).
 
 # License
 
