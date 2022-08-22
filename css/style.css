@@ -1,6 +1,7 @@
 /* Google fonts */
 
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;800&family=Parisienne&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
 
 /* Root element (aka html) */
 :root {
@@ -13,6 +14,7 @@
 	--ff-montserrat: 'Montserrat', sans-serif;
 	--ff-lora: 'Lora', serif;
 	--ff-roboto: 'Roboto', sans-serif;
+	--ff-rubik-dirt: 'Rubik Dirt', cursive;
 	--fs-paragraphs: calc(0.8rem + 0.35vw);
 	--fs-links-btns: calc(0.65rem + 0.5vw);
 }
@@ -91,11 +93,12 @@ html {
 }
 
 .logo {
-	font-family: var(--ff-parisienne);
+	font-family: var(--ff-rubik-dirt);
 	font-size: 3.5rem;
 	text-transform: lowercase;
 	letter-spacing: 0.4rem;
 	padding: 0 1.2rem;
+	font-weight: 400;
 }
 
 .nav-links {
