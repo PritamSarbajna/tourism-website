@@ -95,11 +95,11 @@ html {
 
 .logo {
 	font-family: var(--ff-rubik-dirt);
-	font-size: 2.5rem;
+	font-size: 1.5rem;
 	text-transform: uppercase;
 	letter-spacing: 0.4rem;
 	padding: 0 1.2rem;
-	font-weight: 400;
+	font-weight: 300;
 }
 
 .nav-links {
