@@ -388,14 +388,12 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    /* margin-top: 0px; */
-
+	margin-top: 0em;
     padding: 5em 2em;
     flex-wrap: wrap;
     width: 100%;
     min-height: 100vh;
     flex-direction: row;
-    /* background: linear-gradient(45deg, #fbda61, #fc036b); */
 	background-color: #000;
     font-family: 'Montserrat', sans-serif;
 }
