@@ -398,8 +398,9 @@ section {
     font-family: 'Montserrat', sans-serif;
 }
 
-.card{
+.concard{
     background-color: #ffff;
+	padding: 0.2em 0.5em;
 	color: #222;
     height: 20em;
     width: 15em;
@@ -411,7 +412,7 @@ section {
     justify-content: center;
 }
 
-.card .pfp{
+.concard .pfp{
     width: 50%;
     border-radius: 100%;
 }
