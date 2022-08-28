@@ -275,7 +275,8 @@ section {
 	margin-left: 8rem;
 	position: relative;
 	z-index: 1;
-	padding: 2rem 0;
+	padding: 2rem 17px;
+	margin: auto;
 }
 
 .explore-content::after {
@@ -293,7 +294,7 @@ section {
 	width: 100%;
 	font-size: calc(2.2rem + 1vw);
 	letter-spacing: 0.3rem;
-	margin-left: 4.5rem;
+	margin: auto;
 }
 
 .explore-content .line {
@@ -305,11 +306,12 @@ section {
 	max-width: 65ch;
 	line-height: 1.5;
 	text-align: left;
+	padding: 0px 35px;
 }
 
 .explore-content .ctn {
-	margin-top: 40px;
-	margin-right: 28rem;
+	margin: 17px auto;
+    padding: 12px 27px;
 }
 
 /* tours */
