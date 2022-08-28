@@ -1,6 +1,6 @@
 /* Google fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;800&family=Parisienne&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;800&family=Parisienne&family=Roboto&family=Teko:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
 
 
@@ -89,7 +89,7 @@ html {
 	width: 100%;
 	justify-content: space-between;
 	align-items: center;
-	padding: 5px;
+	padding: 12px 5px;
 	z-index: 10;
 	color: whitesmoke;
 }
@@ -275,7 +275,8 @@ section {
 	margin-left: 8rem;
 	position: relative;
 	z-index: 1;
-	padding: 2rem 0;
+	padding: 2rem 17px;
+	margin: auto;
 }
 
 .explore-content::after {
@@ -290,10 +291,10 @@ section {
 }
 
 .explore-content h1 {
-	width: 100%;
+	/* width: 100%; */
 	font-size: calc(2.2rem + 1vw);
 	letter-spacing: 0.3rem;
-	margin-left: 4.5rem;
+	margin: auto;
 }
 
 .explore-content .line {
@@ -305,11 +306,12 @@ section {
 	max-width: 65ch;
 	line-height: 1.5;
 	text-align: left;
+	padding: 0px 35px;
 }
 
 .explore-content .ctn {
-	margin-top: 40px;
-	margin-right: 28rem;
+	margin: 17px auto;
+    padding: 12px 27px;
 }
 
 /* tours */
@@ -374,6 +376,7 @@ section {
 	text-align: justify;
 	padding-top: 14em;
 	font-family: 'Work Sans', sans-serif;
+	margin-left: 6em;
 }
 
 #about_us p::first-letter {
@@ -402,16 +405,25 @@ section {
     background-color: #ffff;
 	padding: 0.2em 0.5em;
 	color: #222;
-    height: 20em;
-    width: 15em;
+    height: 12em;
+    width: 10em;
     border-radius: 20px;
-    margin: 0.5em 0.5em;
+    margin: 1.5em 0.5em;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-
+.concard:hover{
+	background-color: #f1f1f1;
+	border: 4px solid rgb(255, 123, 0);
+	animation: colorchange 5s infinite;
+}
+@keyframes colorchange {
+	50%{
+		border-color: #ff5acd;
+	}
+}
 .concard .pfp{
     width: 50%;
     border-radius: 100%;
@@ -422,10 +434,12 @@ section {
     font-size: 0.9em;
 }
 .text h1{
-    font-weight: 900;
+    font-weight: 600;
+	font-size: 20px;
+	font-family: 'Teko', sans-serif;
 }
 .logolink{
-    margin: 2em 0em 0em 0em;
+    margin: 0.6em 0em 0em 0em;
     width: 25%;
 }
 .logolink img{

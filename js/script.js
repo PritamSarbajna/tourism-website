@@ -22,3 +22,8 @@ $('#quad').on('click',function(){
     $('#quad').css('border','2px solid whitesmoke');
     $('#quad').css('border-radius','20px');
 });
+$('#quint').on('click',function(){
+    removeall();
+    $('#quint').css('border','2px solid whitesmoke');
+    $('#quint').css('border-radius','20px');
+});
