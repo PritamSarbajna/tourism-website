@@ -89,7 +89,7 @@ html {
 	width: 100%;
 	justify-content: space-between;
 	align-items: center;
-	padding: 5px;
+	padding: 12px 5px;
 	z-index: 10;
 	color: whitesmoke;
 }
@@ -440,10 +440,7 @@ section {
 }
 .logolink{
     margin: 0.6em 0em 0em 0em;
-    z-index: 10;
     width: 25%;
-    background: white;
-    border-radius: 50%;
 }
 .logolink img{
     border-radius: 100%;

@@ -10,8 +10,7 @@
 		margin-bottom: 30px;
 	}
 }
-
-@media only screen and (max-width: 850px) {
+@media screen and (max-width:1130px){
 	.menu-btn {
 		display: block;
 	}
@@ -44,7 +43,8 @@
 	.nav-links li {
 		margin: 30px auto;
 	}
-
+}
+@media only screen and (max-width: 850px) {
 	/*events*/
 	.row {
 		flex-direction: column;
