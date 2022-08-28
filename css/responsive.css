@@ -118,9 +118,12 @@
 	.content-col .line {
 		margin: 0.5rem auto;
 	}
-
 	.content-col .ctn {
 		margin: 0 auto;
 		position: inherit;
+	}
+	.content-col p{
+		max-width: 75%;
+		text-align: justify;
 	}
 }

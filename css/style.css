@@ -291,7 +291,7 @@ section {
 }
 
 .explore-content h1 {
-	width: 100%;
+	/* width: 100%; */
 	font-size: calc(2.2rem + 1vw);
 	letter-spacing: 0.3rem;
 	margin: auto;
