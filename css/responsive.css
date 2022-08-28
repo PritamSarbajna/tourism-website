@@ -68,10 +68,6 @@
 		width: 100%;
 	}
 
-	/* .image-gallery img {
-		width: 90%;
-	} */
-
 	/*footer*/
 	.footer {
 		padding: 10px;
@@ -79,11 +75,15 @@
 	.content-col {
 		width: 100%;
 	}
+	#about_us p {
+		width: 70%;
+	}
+
 }
 
 @media screen and (max-width: 770px) {
 	#about_us p {
-		width: 380px;
+		width: 85%;
 		padding-top: 7em;
 		margin: auto;
 	}
@@ -103,6 +103,11 @@
 
 	.explore-content .ctn {
 		margin: 40px auto;
+	}
+}
+@media screen and (max-width:600px){
+	#about_us p{
+		margin: auto;
 	}
 }
 @media screen and (max-width: 470px) {

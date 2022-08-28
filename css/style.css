@@ -376,6 +376,7 @@ section {
 	text-align: justify;
 	padding-top: 14em;
 	font-family: 'Work Sans', sans-serif;
+	margin-left: 6em;
 }
 
 #about_us p::first-letter {
