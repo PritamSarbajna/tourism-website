@@ -481,7 +481,7 @@ form {
   background-color: #fc036b;
   color: white;
   display: flex;
-  flex-direction: row;
+  align-items: center;
 }
 
 .c_boxx a:hover {
