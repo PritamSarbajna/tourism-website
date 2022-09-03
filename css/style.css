@@ -487,6 +487,7 @@ form {
 .c_boxx a:hover {
   background-color: white;
   color: #fc036b;
+  transition: all 0.5s ease;
 }
 
 .c_boxx i {
