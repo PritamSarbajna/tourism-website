@@ -453,6 +453,7 @@ section {
 }
 
 .contact_us {
+  margin-top: 3rem;
   display: flex;
   font-family: var(--ff-roboto);
 }
@@ -462,27 +463,44 @@ form {
 }
 
 .cbox {
-  border: 3px solid black;
   width: 45%;
   margin-left: 70px;
-  margin-top: 35px;
   padding: 10px 30px;
 }
 
-.c_boxx h4 {
-  color: #fc036b;
-  font-size: 16px;
-  font-weight: 700;
-  padding: 1rem 0;
+.cbox-message {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.cbox-line {
+  width: 20%;
+  height: 0.2em;
+  background-color: #fb036b;
+  margin-bottom: 3em;
+  margin-top: 1em;
+}
+
+.c_boxx a p {
+  color: white;
+  font-size: 1em;
+  font-weight: 100;
+  padding: 1rem;
+  padding: 0px 40px;
 }
 
 .c_boxx a {
-  padding: 17px;
-  border: 2px solid #fc036b;
+  padding: 0.5em;
+  margin-bottom: 2em;
+  padding-left: 2em;
+  border: 0.1em solid #fc036b;
   background-color: #fc036b;
   color: white;
   display: flex;
+  border-radius: 2em;
   align-items: center;
+  border: #fc036b 0.1em solid;
+  font-size: 1.5em;
 }
 
 .c_boxx a:hover {
@@ -493,16 +511,9 @@ form {
 
 .c_boxx i {
   font-size: 38px;
+  margin-right: 10px;
+  /* margin-left: 0.5em; */
 }
-
-.c_boxx a p {
-  font-size: 22px;
-  padding: 0px 40px;
-}
-
-/* .c_boxx a p:hover {
-	color: #fc036b;
-}   */
 
 input[type="text"],
 select,
@@ -520,8 +531,8 @@ label {
 }
 
 input[type="submit"] {
-  background-color: whitesmoke;
-  color: #fc036b;
+  background-color: #fc036b;
+  color: whitesmoke;
   padding: 12px 50px;
   border: 2px solid #fc036b;
   border-radius: 100vmax;
@@ -531,8 +542,14 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #fc036b;
-  color: whitesmoke;
+  background-color: whitesmoke;
+  color: #fc036b;
+}
+
+.cform {
+  background-color: #222;
+  padding: 1em;
+  border-radius: 0.5rem;
 }
 
 .ccol {
@@ -541,10 +558,41 @@ input[type="submit"]:hover {
   margin-top: 6px;
 }
 
+.crow-in {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.crow-message {
+  margin: 1rem;
+}
+
+.crow-message div {
+  width: 20%;
+  display: block;
+  height: 1em;
+  border-bottom: 3px solid #fc036b;
+}
+
+.ccol-left {
+  margin: 1em;
+}
+
 .ccol {
   float: left;
   width: 100%;
   margin-top: 6px;
+}
+
+#name {
+  width: 90%;
+  margin: 1em;
+}
+
+#email {
+  width: 90%;
+  margin: 1em;
 }
 
 .crow:after,
@@ -555,7 +603,8 @@ input[type="submit"]:hover {
 }
 
 .crow-s {
-  padding-top: 14px;
+  margin: 1em;
+  color: #fc036b;
 }
 
 /* footer */
