@@ -490,7 +490,7 @@ form {
 }
 
 .c_boxx a {
-  padding: 0.5em;
+  padding: 1em;
   margin-bottom: 2em;
   padding-left: 2em;
   border: 0.1em solid #fc036b;
@@ -500,7 +500,7 @@ form {
   border-radius: 2em;
   align-items: center;
   border: #fc036b 0.1em solid;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 .c_boxx a:hover {
