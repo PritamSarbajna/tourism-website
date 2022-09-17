@@ -122,6 +122,7 @@ html {
   font-weight: bold;
   border: 2px hidden whitesmoke;
   border-radius: 20px;
+  margin: 0px -10px;
 }
 
 header {
