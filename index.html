@@ -19,7 +19,7 @@
             <li><a href="#explore" id="tri" class="cir_border">Explore</a></li>
             <li><a href="#about" id="quad" class="cir_border">About</a></li>
             <li><a href="#contribution" id="quint" class="cir_border">Contributions</a></li>
-            <li><a href="#contact" class="ctn contact_button">Contact</a></li>
+            <li><a href="#contact" id="hex" class="cir_border">Contact</a></li>
         </ul>
         <img src="./img/menu-btn.png" alt="" class="menu-btn">
     </nav>
@@ -253,28 +253,17 @@
             <div class="line"></div>
         </div>
         <div class="contact_us">
-            <form action="" method="post">
-                <div class="crow">
-                    <div class="ccol">
-                        <label for="name">Name</label>
-                    </div>
-                    <div class="ccol">
+            <form class="cform" action="" method="post">
+                <div class="crow-message">
+                    <h1>Send us a message</h1>
+                    <div></div>
+                </div>
+                <div class="crow-in">
                         <input type="text" id="name" name="name" placeholder="Your name">
-                    </div>
-                </div>
-                <div class="crow">
-                    <div class="ccol">
-                        <label for="email">Email</label>
-                    </div>
-                    <div class="ccol">
                         <input type="text" id="email" name="email" placeholder="Your Email id">
-                    </div>
                 </div>
                 <div class="crow">
-                    <div class="ccol">
-                        <label for="country">Country</label>
-                    </div>
-                    <div class="ccol">
+                    <div class="ccol-left">
                         <select name="country" id="country">
                             <option value="India">India</option>
                             <option value="Russia">Russia</option>
@@ -286,35 +275,34 @@
                     </div>
                 </div>
                 <div class="crow">
-                    <div class="ccol">
-                        <label for="remarks">Remarks</label>
-                    </div>
-                    <div class="ccol">
+                    <div class="ccol-left">
                         <textarea type="text" id="remarks" name="remarks" placeholder="Your Remarks....." style="height: 150px;"></textarea>
                     </div>
                 </div>
-                <div class="crow-s">
-                    <input type="submit" value="Submit">
-                </div>
+                <input class="crow-s" type="submit" value="Submit">
             </form>
             <div class="cbox">
-                <div class="c_boxx">
-                    <h4>Our Email</h4>
-                    <a href="mailto:abc@gmail.com"><i class="fa fa-envelope"></i><p> abc@gmail.com</p></a>
-                    
+                <div>
+                    <p class="cbox-message">Prefer some other way ?<br>Reach us by using the details given below</p>
+                <div class="cbox-line"></div>
                 </div>
                 <div class="c_boxx">
-                    <h4>Our Contact no</h4>
-                    <a href="tel:+91-12345-67890"><i class="fa fa-phone"></i><p> +91-12345-67890</p></a>
-                    
+                    <a href="mailto:abc@gmail.com"><i class="fa fa-envelope"></i>
+                        Mail: abc@gmail.com
+                    </a>
                 </div>
                 <div class="c_boxx">
-                    <h4>Our Location</h4>
-                    <a href="#"><i class="fa fa-map-marker"></i><p> Kolkata,West Bengal,India</p></a>
-                    
+                    <a href="tel:+91-12345-67890"><i class="fa fa-phone"></i>
+                        Phone: (+91) 12345-67890
+                    </a>
+                </div>
+                <div class="c_boxx">
+                    <a href="#"><i class="fa fa-map-marker"></i>
+                        Location: Kolkata,West Bengal,India
+                    </a>
                 </div>
             </div>
-    </div>
+        </div>
     </section>
     <!-- contact  -->
 
