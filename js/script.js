@@ -31,3 +31,10 @@ $("#hex").on("click", function () {
   $("#hex").css("border", "2px solid whitesmoke");
   $("#hex").css("border-radius", "20px");
 });
+
+// Light/Dark toggle
+const checkbox = document.getElementById('checkbox');
+
+checkbox.addEventListener('change', ()=>{
+  document.body.classList.toggle('dark');
+})
