@@ -203,7 +203,6 @@ section {
   text-align: center;
   font-family: var(--ff-montserrat);
   font-size: 4vmin;
-  color: rgb(73, 73, 126);
 }
 
 .row {
@@ -234,7 +233,6 @@ section {
 
 .col > h4 {
   font-size: calc(1rem + 0.5vw);
-  color: #fff;
   margin: 20px auto;
   font-family: var(--ff-lora);
 }
@@ -693,10 +691,57 @@ img:hover {
 }
 
 body {
-  background-color: black;
+ background-color: black;
   color: white;
 }
 
-.font-color {
+body.dark{
+  background-color: white;
+  color: black;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  width: 48px;
+  height: 22px;
+  background-color:#111;
+  display: flex;
+  border-radius:50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  transform: scale(1.5);
+}
+
+.ball {
+  width: 20px;
+  height: 18px;
+  background-color: white;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+/*  target the elemenent after the label*/
+.checkbox:checked + .label .ball{
+  transform: translateX(24px);
+}
+
+.fa-moon-o {
   color: white;
+}
+
+.fa-sun-o {
+  color: yellow;
+}
+
+.color{
+  color:white;
 }
