@@ -11,8 +11,8 @@ ADVENTURE - A simple website of a tourism agency for tourists.
 ## 👓 Preview
 
 <img src="https://user-images.githubusercontent.com/81079566/185714633-9f7395be-e19e-4c30-8cbc-d82ce31b5d15.gif" width="75%">
-<img src="https://user-images.githubusercontent.com/81079566/185711910-b5d48870-da96-44dd-a4d1-0a6c681f1ceb.png" width="75%">
-<img src="https://user-images.githubusercontent.com/81079566/185712453-ca03374c-1167-4175-a344-cdacd95cd268.png" width="75%">
+<img src="https://user-images.githubusercontent.com/78745590/191673812-206c797d-b9f1-401d-8814-3e9e1c78ffe4.png" width="75%">
+<img src="https://user-images.githubusercontent.com/78745590/191674167-a94a8479-87ab-4b5c-9ecd-4e0565234486.png" width="75%">
 
 ## 👨‍💻 Contributing
 Contributions make the open source community such an amazing place to learn, inspire, and create.
