@@ -203,7 +203,6 @@ section {
   text-align: center;
   font-family: var(--ff-montserrat);
   font-size: 4vmin;
-  color: rgb(73, 73, 126);
 }
 
 .row {
@@ -234,7 +233,6 @@ section {
 
 .col > h4 {
   font-size: calc(1rem + 0.5vw);
-  color: #fff;
   margin: 20px auto;
   font-family: var(--ff-lora);
 }
@@ -693,12 +691,13 @@ img:hover {
 }
 
 body {
- 
+ background-color: black;
   color: white;
 }
 
-.font-color {
-  color: white;
+body.dark{
+  background-color: white;
+  color: black;
 }
 
 .checkbox {
@@ -743,6 +742,6 @@ body {
   color: yellow;
 }
 
-.dark {
-  background-color: black;
+.color{
+  color:white;
 }
