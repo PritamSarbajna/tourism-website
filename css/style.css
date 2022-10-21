@@ -671,16 +671,18 @@ img:hover {
   transform: scale(1.1);
 }
 
-.cir_border:hover,
+.cir_border:hover{
+    color: #fc036b
+}
+
+
 .active {
   border: 2px solid whitesmoke;
   border-radius: 20px;
   color: #fc036b;
   cursor: pointer;
 }
-.cir_border:hover a {
-  color: #fc036b;
-}
+
 .ctn:hover {
   background: whitesmoke;
   color: #fc036b;
