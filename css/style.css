@@ -323,6 +323,7 @@ section {
 .image-gallery {
   display: grid;
   gap: 1.8rem 1rem;
+  width: 100%;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   padding: 1rem;
@@ -789,5 +790,7 @@ body.dark{
     background-position: 500%;
   }
 }
-
+.row img{
+  border-radius: 50px;
+}
 /* end */
