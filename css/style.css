@@ -2,10 +2,10 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;800&family=Parisienne&family=Roboto&family=Teko:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@500;600;700&family=Quantico:ital,wght@0,400;0,700;1,700&display=swap');
 
 /* Root element (aka html) */
 :root {
-  box-sizing: border-box;
   scroll-behavior: smooth;
 
   /* CSS Variables */
@@ -17,6 +17,17 @@
   --ff-rubik-dirt: "Rubik Dirt", cursive;
   --fs-paragraphs: calc(0.8rem + 0.35vw);
   --fs-links-btns: calc(0.65rem + 0.5vw);
+
+  --font-geological: 'Geologica', sans-serif;
+  --font-quantico: 'Quantico', sans-serif;
+
+  /* COLOR */
+  --color: #fb036b;
+}
+
+::selection{
+  background-color: #fc036b;
+  color: white;
 }
 
 /* Global */
@@ -25,48 +36,15 @@
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
-}
-
-img {
-  max-width: 100%;
-  display: block;
-}
-
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
-}
-
-span {
-  color: #7c7c7c;
-  padding: 0px 40px;
-}
-
-/* .active {
-  color: #fc036b;
-  border-radius: 20px;
-  background: whitesmoke;
-  font-weight: bold;
-} */
-
-body,
-html {
-  overflow-x: hidden;
   box-sizing: border-box;
 }
 
-.container {
-  width: 98%;
-  max-width: 91rem;
-  margin: 0 auto;
+a , ul{
+  text-decoration: none;
+  list-style: none;
 }
 
 /*scrollbar*/
-
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -74,86 +52,130 @@ html {
 ::-webkit-scrollbar-thumb {
   background: gray;
   border-radius: 10px;
+} 
+
+
+/* Btn*/
+.btn {
+  font-family: var(--ff-montserrat);
+  font-size: var(--fs-links-btns);
+  font-weight: 700;
+  margin-top: auto;
+  display: inline-block;
+  padding: 13px 50px;
+  background: var(--color);
+  border-radius: 30px;
+  color: whitesmoke;
+  transition: 0.5s ease;
+}
+.btn:hover{
+  background-color: white;
+  color: var(--color);
 }
 
-/* Navbar */
+/* HEADER , NAV_BAR , HEADER CONTENT */
+header {
+  height: 100vh;
+  background:linear-gradient(10deg,rgb(0,0,0,0.7) , rgb(0,0,0,0.7)), url("../img/bg.png") fixed bottom;
+  background-size: cover;
+}
 
-.navbar {
+/* NAV-BAR */
+header nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  margin: 0 20px;
+}
+header .logo img{
+  width: 55px;
+  height: 55px;
+}
+
+header .logo a{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--ff-rubik-dirt);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  font-weight: 300;
+  color: rgb(254, 252, 252);  
+}
+
+.navbar{
   position: fixed;
   top: 0;
-  left: 0;
   background: rgba(0, 0, 0, 0.2);
   backdrop-filter: saturate(180%) blur(10px);
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 5px;
+  padding: 12px 40px 12px 0px;
   z-index: 10;
   color: whitesmoke;
 }
-
-.logo {
-  font-family: var(--ff-rubik-dirt);
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  letter-spacing: 0.4rem;
-  padding: 0 1.2rem;
-  font-weight: 300;
-  color: rgb(254, 252, 252); 
-  
-  
-}
-
-
-
-.nav-links {
+.nav-links , .nav-links li a {
   display: flex;
-  align-items: center;
-}
-
-.nav-links li {
-  font-family: var(--ff-montserrat);
-  margin: 0px 15px;
-}
-
-.nav-links li a {
+  gap: 35px;
   color: white;
-  cursor: pointer;
-}
-
-.cir_border {
-  padding: 6px 20px;
+  font-family: var(--ff-montserrat);
   font-weight: bold;
-  border: 2px hidden whitesmoke;
-  border-radius: 20px;
-  margin: 0px -10px;
+  transition: 0.4s ease-in;
+}
+header nav .nav-links .link{
+  font-size: 1.5rem;
+}
+header nav .nav-links .active {
+  color: var(--color);
+  border: none;
 }
 
-header {
-  width: 100vw;
-  height: 100vh;
-  background-image: url("../img/bg.png");
-  background-position: bottom;
-  background-attachment: fixed;
-  background-size: cover;
+header nav .link:hover{
+  color: var(--color);
+}
+header nav li::after{
+  content: "";
+  width: 0;
+  height: 5px;
+  display: block;
+  background: var(--color);
+  transition: 0.4s ease-in;
+}
+header nav li:hover::after{
+  width: 100%;
+  margin: 0 auto;
+}
+.menu-btn{
+  cursor: pointer;
+  display: none;
+}
+.menu-btn div{
+  width: 45px;
+  height: 6px;
+  background-color: white;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+.menu-btn .menu-small{
+  width: 30px;
+}
+
+/* HEADER CONTENT */
+header .home{
+  height: calc(100vh - 200px);
   display: flex;
-  align-items: end;
+  flex-direction: column;
   justify-content: center;
 }
 
 .header-content {
-  font-family: var(--ff-lora);
-  letter-spacing: 0.5rem;
   color: whitesmoke;
+  font-family: var(--font-geological);
   text-align: center;
-  z-index: 1;
-  padding: 4rem;
-  margin-bottom: 150px;
-}
-
-.header-content a {
-  letter-spacing: 0.1rem;
 }
 
 .header-content h2 {
@@ -163,125 +185,92 @@ header {
 .line {
   width: 150px;
   height: 4px;
-  background: #fc036b;
+  background: var(--color);
   margin: 10px auto;
   border-radius: 5px;
 }
-
 .header-content h1 {
   font-size: 7vmin;
   margin-top: 50px;
   margin-bottom: 30px;
 }
 
-.ctn {
-  font-family: var(--ff-montserrat);
-  font-size: var(--fs-links-btns);
-  font-weight: 700;
-  padding: 13px 50px;
-  background: #fc036b;
-  border-radius: 30px;
-  color: whitesmoke;
+.header-content a {
+  letter-spacing: 0.1rem;
 }
 
-.menu-btn {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  width: 40px;
-  cursor: pointer;
-  display: none;
-}
+/* END HEADER  */
+
+
 
 /* Events */
-section {
-  width: 80%;
-  margin: 80px auto;
-}
-
 .title {
   text-align: center;
-  font-family: var(--ff-montserrat);
+  font-family: var(--font-geological);
   font-size: 4vmin;
+  text-transform: uppercase;
+  margin: 30px 0;
 }
 
-.row {
+.row{
   display: flex;
-  width: 100%;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .card {
-  cursor: pointer;
-  height :400px
-}
-
-.row .col {
+  flex: 1 1 21rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  margin: 10px;
-  height: 450px;
+  justify-content: center;
+  flex-direction: column;
+  align-self: normal;
+  margin: 20px 20px;
+  padding: 10px 10px;
 }
-
-.row .col img {
-  width: 90%;
+.card img{
+  width: 100%;
+  margin-bottom: 25px;
 }
-
-.events .row {
-  margin-top: 50px;
+.card h4{
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin: 10px 0;
+  text-align: center;
+  font-family: var(--font-quantico);
+  font-weight: 700;
 }
-
-.col > h4 {
-  font-size: calc(1rem + 0.5vw);
-  margin: 20px auto;
-  font-family: var(--ff-lora);
-}
-
-.col p {
+.card p{
+  margin-bottom: 15px;
   color: #7c7c7c;
-  padding: 0px 40px;
   font-size: var(--fs-paragraphs);
   font-family: var(--ff-roboto);
-}
-
-.col > p {
-  color: #7c7c7c;
-  padding: 0;
   line-height: 1.5;
   text-align: center;
-  max-width: 35ch;
 }
+/* Event End */
 
-.events .ctn {
-  margin-top: 30px;
-}
 
 /* explore */
 .explore {
-  width: 100%;
-  height: 100vh;
-  background-image: url(../img/bg2.png);
-  background-attachment: fixed;
-  background-position: center;
+  background: url(../img/bg2.png) no-repeat fixed center;
   background-size: cover;
-  background-repeat: no-repeat;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .explore-content {
-  font-family: var(--ff-lora);
-  color: whitesmoke;
+  font-family: var(--font-geological);
+  margin: 100px 0;
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-left: 8rem;
+  color: whitesmoke;
   position: relative;
   z-index: 1;
-  padding: 2rem 17px;
-  margin: auto;
+  padding: 30px 25px;
 }
 
 .explore-content::after {
@@ -290,16 +279,15 @@ section {
   inset: 0;
   z-index: -1;
   display: block;
-  background: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(2.5px);
-  border-radius: 0.5rem;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+  border-radius: 8px;
 }
 
 .explore-content h1 {
-  /* width: 100%; */
   font-size: calc(2.2rem + 1vw);
   letter-spacing: 0.3rem;
-  margin: auto;
+  text-align: center;
 }
 
 .explore-content .line {
@@ -307,20 +295,60 @@ section {
 }
 
 .explore-content p {
-  color: rgb(221, 221, 221);
-  max-width: 65ch;
+  width: 90%;
+  font-size: 1.5rem;
   line-height: 1.5;
-  text-align: left;
-  padding: 0px 35px;
+  text-align: center;
+  color: rgb(221, 221, 221);
+  padding: 0px 30px;
+  margin-bottom: 30px;
 }
 
-.explore-content .ctn {
-  margin: 17px auto;
+.explore-content .btn {
+  margin: 20px auto;
   padding: 12px 27px;
 }
+/* Explore End */
+
+
 
 /* tours */
-.image-gallery {
+
+
+.tours .container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.tours .content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom:20px ;
+}
+.tours .content h1{
+  font-size: 2.5rem;
+  text-align: center;
+}
+.tours .content h1::after{
+  content: "";
+  display: block;
+  width: 50%;
+  height: 6px;
+  background-color: var(--color);
+  border-radius: 10px;
+  margin: 20px auto;
+}
+.tours .content p{
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 20px 0 ;
+}
+
+.tours .image-gallery {
   display: grid;
   gap: 1.8rem 1rem;
   grid-template-columns: repeat(2, 1fr);
@@ -328,88 +356,52 @@ section {
   padding: 1rem;
 }
 
-.tours .row {
-  gap: 4rem;
-}
+/* Tours End */
 
-.content-col {
-  position: relative;
-}
 
-.content-col h1 {
-  font-size: calc(2.2rem + 1vw);
-  font-family: var(--ff-lora);
-  max-width: 15.5ch;
-}
-
-.content-col .line {
-  margin-left: 0;
-}
-
-.content-col p {
-  padding: 0;
-  margin: 30px 0;
-  width: 100%;
-  text-align: left;
-  max-width: 40ch;
-}
-
-.content-col .ctn {
-  position: absolute;
-  left: 0;
-  bottom: -14%;
-}
 
 /* about */
-#about {
-  width: 100%;
-}
-
-#about_us {
-  background: url("https://awe365.com/wp-content/uploads/2013/07/adventure-sports-hang-gliding-flickrcc-image-by-Steve-Slater.jpg");
-  width: 100%;
-  height: 630px;
-  background-repeat: no-repeat;
+.about{
+  background: linear-gradient(10deg,rgb(0,0,0,0.6) , rgb(0,0,0,0.6)),url("https://awe365.com/wp-content/uploads/2013/07/adventure-sports-hang-gliding-flickrcc-image-by-Steve-Slater.jpg") no-repeat fixed center;
   background-size: cover;
-  background-attachment: fixed;
-  margin: 30px 0px 0px 0px;
+  display: flex;
+  flex-direction:column ;
+  align-items: center;
+  justify-content: center;
 }
 
-#about_us p {
-  width: 43em;
-  color: white;
-  text-align: justify;
-  padding-top: 14em;
-  font-family: "Work Sans", sans-serif;
-  margin-left: 6em;
+.about .title h1{
+  font-size: 3rem;
 }
 
-#about_us p::first-letter {
-  padding-left: 47px;
-  font-size: 55px;
-  color: #fc036b;
+.about_us {
+  width: 80%;
+  font-size: 1.5rem;
+  font-family: var(--font-quantico);
+  margin-bottom: 30px;
 }
+.about_us span{
+  font-size: 3rem;
+  color: var(--color);
+}
+/* ABOUT-US END */
+
 
 /* Contributors */
 .contributors {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin-top: 0em;
-  padding: 5em 2em;
   flex-wrap: wrap;
-  width: 100%;
-  min-height: 100vh;
   background-color: #000;
   font-family: "Montserrat", sans-serif;
 }
 
 .concard {
-  background-color: #ffff;
-  padding: 0.2em 0.5em;
-  color: #222;
-  height: 12em;
-  width: 10em;
+  background-color: #535353;
+  color: #ffffff;
+  width: 20em;
+  height: 20em;
   border-radius: 5px;
   margin: 1.5em 0.5em;
   display: flex;
@@ -419,30 +411,30 @@ section {
 }
 .concard:hover {
   background-color: #fb036b;
-  border-bottom: 5px solid #fff;
+  border-bottom: 20px solid #c9bfbf;
   color: #fff;
-  transform: translateY(-7.5px);
+  transform: translateY(-7px);
   transition: background-color 0.5s ease, transform 1s ease,
-    border-bottom 0.5s ease 0.2s;
+   border-bottom 0.5s ease 0.2s;
 }
 
 .concard .pfp {
-  width: 50%;
+  width: 35%;
   border-radius: 100%;
 }
-.text {
-  margin: 1em 0em 0em 0em;
-  text-align: center;
-  font-size: 0.9em;
-}
+
 .text h1 {
-  font-weight: 600;
-  font-size: 20px;
-  font-family: "Teko", sans-serif;
+  font-family: var(--font-quantico);
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 5px;
 }
 .logolink {
   margin: 0.6em 0em 0em 0em;
-  width: 25%;
+  width: 20%;
 }
 .logolink img {
   border-radius: 100%;
@@ -451,6 +443,10 @@ section {
 .logolink .github-logo {
   width: 100%;
 }
+
+
+
+
 
 /* contact */
 #contact {
