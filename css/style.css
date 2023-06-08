@@ -375,6 +375,26 @@ section {
   margin: 30px 0px 0px 0px;
 }
 
+#about_us div {
+  display: grid;
+  align-items: center; 
+  grid-template-columns: 2fr 1fr 1fr;
+  column-gap: 5px;
+  position: relative;
+}
+
+
+#about_us div span {
+  margin: 0;
+  position: absolute;
+  top: 60%;
+  opacity: 0;
+  left: 70%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  transition: 1s;
+}
+
 #about_us p {
   width: 43em;
   color: white;
