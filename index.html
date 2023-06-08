@@ -13,7 +13,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="im/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 </head>
-<body>
+<body onload='if (window.location.href.substr(window.location.href.length - 6) == "#about") { introAboutLogoTransition(); }'>
     <!--navbar-->
     <nav class="navbar glass" style="height: 70px;">
         <span><a href="#home" style="display:flex; align-items: center;"><img class="img2"src="https://drive.google.com/uc?export=view&id=18w44M_wq9TbQlwsK126yf8IAin4VxGiK" width="40"
@@ -96,7 +96,7 @@
             <div class="col content-col">
                 <h1 class="font-color">UPCOMING TOURS & DESTINATION</h1>
                 <div class="line"></div>
-                <p>Wed 28 sept 2023 : Port of Spain City Tour and Birdseye Fort View . </br>
+                <p>Wed 28 sept 2023 : Port of Spain City Tour and Birdseye Fort View. </br>
                    Sat 1 oct 2023 : Tour the Gasparee Caves.</br>
                    Tues 4 oct 2023 : Trinidad North Coast Experience. </br> 
                     and many more ......
@@ -126,8 +126,9 @@
                 <p>Inspire you to explore world tours beyond the usual well-known locations. To the realms of your desired imagination and dreams. Heritage Tours of World. Art & Culture Tours. Wildlife with Game Drive.
                 Our experienced travel experts design the trips covering the most famous tourist destinations, including sightseeing and accommodation at the finest hotels. We provide guests with the best of each country. Our staff is dedicated in enhancing your experience.
                 Tourism can be expensive, but let your money go further, to better places and to be put into memories worth life-long.
-                With the perfect travel companion, don't build memories... Experience Them.
+                With the perfect travel companion, don't build memories... <br>Experience Them.
                 </br></br>Explore the different horizons of the world with us and create memories for a lifetime.</p>
+                <span id="about-quad"><a href="#home"><center><h1 style="font-family: var(--ff-montserrat); color: white;">Find that</h1><br><img class="img2" src="https://drive.google.com/uc?export=view&id=18w44M_wq9TbQlwsK126yf8IAin4VxGiK" width="200"><br><h1 class="logo" style="font-size: 50px;">ADVENTURE</h1></a></center></span>
             </div>
         </div>
     </section>
