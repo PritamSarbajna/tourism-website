@@ -1,4 +1,76 @@
 /* mobile responsiveness design */
+
+
+
+/* Header , Navbar  */
+@media screen and (max-width: 1100px){
+  .menu-btn {
+    display: block;
+  }
+
+  .navbar {
+    padding: 45px 30px 45px 0;
+  }
+  nav .nav-links{
+    display: inline-block;
+    text-align: center;
+    background: black;
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    top: 95px;
+    right: 0;
+    transform: translateX(100%);
+    transition: 0.5s ease-in-out;
+    border-top-left-radius: 20px;
+ }
+  nav .nav-links .active{
+      color: white;
+      border-radius: 0;
+      border-top-left-radius: 20px;
+  }
+  nav .nav-links a{
+      display: block;
+      padding: 37.5px 0;
+  }
+
+  nav .nav-links li::after{
+    content: none;
+  }
+  nav .nav-links li a:hover{
+      background: #fb036b;
+  }
+  nav .nav-links li a:hover{
+      color: white;
+  }
+  nav .nav-links.menu-open{
+      transform: translateX(0);
+  }
+  nav li.dark-mode{
+    display: flex;
+    padding: 20px 0;
+    justify-content: center;
+  }
+}
+
+/* Header and Nav-bar */
+@media(max-width:1450px){
+  header .logo a{
+    font-size: 1.3rem; 
+  }
+  header .logo img{
+    width: 40px;
+    height: 40px;
+  }
+  .nav-links , .nav-links li a {
+    gap: 30px;
+  }
+  header nav .nav-links .link{
+    font-size: 1.2rem;
+  }
+}
+
+
 @media screen and (max-width: 990px) {
   .contact_us {
     flex-direction: column;
@@ -10,40 +82,7 @@
     margin-bottom: 30px;
   }
 }
-@media screen and (max-width: 1130px) {
-  .menu-btn {
-    display: block;
-  }
 
-  .navbar {
-    padding: 45px;
-  }
-
-  .logo {
-    position: absolute;
-    top: 30px;
-    left: 15px;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    width: 100%;
-    height: 100vh;
-    justify-content: center;
-    background: #484872;
-    margin-top: -900px;
-    transition: all 0.5s ease;
-  }
-
-  .mobile-menu {
-    margin-top: 602px;
-    border-bottom-right-radius: 30%;
-  }
-
-  .nav-links li {
-    margin: 30px auto;
-  }
-}
 @media only screen and (max-width: 850px) {
   /*events*/
   .row {
@@ -68,77 +107,59 @@
     width: 100%;
   }
 
-  /*footer*/
+  /* footer*/
   .footer {
     padding: 10px;
   }
-  .content-col {
+  .about_us p {
     width: 100%;
+    font-size: 1.2rem;
   }
-  #about_us p {
-    width: 70%;
+  .explore-content p{
+    width: 100%;
+    padding: 0;
+    text-align: center;
   }
+    .content-col {
+      text-align: center;
+    }
+    .content-col .line {
+      margin: 0.5rem auto;
+    }
+    .content-col .ctn {
+      margin: 0 auto;
+      position: inherit;
+    }
+    .content-col p {
+      max-width: 75%;
+      text-align: justify;
+    }
+ 
 }
-
 @media screen and (max-width: 770px) {
-  #about_us p {
-    width: 85%;
-    padding-top: 7em;
-    margin: auto;
-  }
   form,
   .cbox {
     width: 90%;
   }
-  .ctn {
-    margin: auto;
+}
+@media(max-width: 650px){
+  header .logo img{
+    display: none;
   }
-
-  .explore-content {
-    margin: 0 auto;
-    text-align: center;
-    width: 80%;
-  }
-
-  .explore-content .ctn {
-    margin: 40px auto;
+  header .logo a{
+    font-size: 0.8rem; 
   }
 }
-@media screen and (max-width: 600px) {
-  #about_us p {
-    margin: auto;
-  }
-}
+ 
 @media screen and (max-width: 470px) {
-  .ctn {
-    padding: 13px 25px;
-  }
+
   .c_boxx a p {
     font-size: 17.5px;
   }
 }
 @media screen and (max-width: 400px) {
-  .ctn {
-    padding: 13px 25px;
-  }
   .c_boxx a p {
     font-size: 16px;
   }
 }
 
-@media (max-width: 850px) {
-  .content-col {
-    text-align: center;
-  }
-  .content-col .line {
-    margin: 0.5rem auto;
-  }
-  .content-col .ctn {
-    margin: 0 auto;
-    position: inherit;
-  }
-  .content-col p {
-    max-width: 75%;
-    text-align: justify;
-  }
-}
