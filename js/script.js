@@ -32,8 +32,18 @@ $("#hex").on("click", function () {
   $("#hex").css("border-radius", "20px");
 });
 
+$("#about").on("mouseover", function () {
+  introAboutLogoTransition();
+});
+
+
 // Light/Dark toggle
 const checkbox = document.getElementById('checkbox');
+
+function introAboutLogoTransition() {
+  $("#about-quad").css("top", "70%");
+  $("#about-quad").css("opacity", "1");
+}
 
 function checkDarkMode(){
   if (localStorage.getItem("tourism_website_darkmode") !== null && localStorage.getItem("tourism_website_darkmode") === "true") {
