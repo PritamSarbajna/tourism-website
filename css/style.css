@@ -376,6 +376,7 @@ section {
 }
 
 #about_us div {
+  padding: 10px;
   display: grid;
   align-items: center; 
   grid-template-columns: 2fr 1fr 1fr;
