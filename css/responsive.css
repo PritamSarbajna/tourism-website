@@ -32,17 +32,18 @@
     justify-content: center;
     /* background: #484872; */
     margin-top: -900px;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in;
     position: relative;
     left: 45px;
   }
 
   .mobile-menu {
     margin-top: 650px;
-    width: 180px;
+    width: 380px;
     /* border-bottom-right-radius: 30%; */
     background: rgba(0, 0, 0,.5);
     backdrop-filter: saturate(180%) blur(10px);
+    transition:all 0.5s ease-out ;
   }
 
   
