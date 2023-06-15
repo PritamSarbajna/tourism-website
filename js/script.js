@@ -36,6 +36,11 @@ $("#about").on("mouseover", function () {
   introAboutLogoTransition();
 });
 
+$('input').on('change', function() {
+  $('body').toggleClass('blue');
+});
+
+
 
 // Light/Dark toggle
 const checkbox = document.getElementById('checkbox');
