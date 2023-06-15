@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="im/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 </head>
 <body onload='if (window.location.href.substr(window.location.href.length - 6) == "#about") { introAboutLogoTransition(); }'>
     <!--navbar-->
     <nav class="navbar glass" style="height: 70px;">
-        <span><a href="#home" style="display:flex; align-items: center;"><img class="img2"src="https://drive.google.com/uc?export=view&id=18w44M_wq9TbQlwsK126yf8IAin4VxGiK" width="40"
-            style="margin: -25px -10px -25px -20px"><h1 class="logo">ADVENTURE</h1></a></span>
+        <span><a href="#home" style="display:flex; align-items: center;"><img class="img2" src="./img/mountain.png" width="40"
+            style="margin: -25px -10px -25px -20px"><h1 class="logo">&nbsp;ADVENTURE</h1></a></span>
         <ul class="nav-links">
             <li><a href="#home" id="pri" class="active cir_border">Home</a></li>
             <li><a href="#events"  id="sec" class="cir_border">Tours</a></li>
@@ -125,12 +125,23 @@
         <br>
         <div id="about_us">
             <div class="boxx">
-                <p>Inspire you to explore world tours beyond the usual well-known locations. To the realms of your desired imagination and dreams. Heritage Tours of World. Art & Culture Tours. Wildlife with Game Drive.
-                Our experienced travel experts design the trips covering the most famous tourist destinations, including sightseeing and accommodation at the finest hotels. We provide guests with the best of each country. Our staff is dedicated in enhancing your experience.
-                Tourism can be expensive, but let your money go further, to better places and to be put into memories worth life-long.
-                With the perfect travel companion, don't build memories... <br>Experience Them.
-                </br></br>Explore the different horizons of the world with us and create memories for a lifetime.</p>
-                <span id="about-quad"><a href="#home"><center><h1 style="font-family: var(--ff-montserrat); color: white;">Find that</h1><br><img class="img2" src="https://drive.google.com/uc?export=view&id=18w44M_wq9TbQlwsK126yf8IAin4VxGiK" width="200"><br><h1 class="logo" style="font-size: 50px;">ADVENTURE</h1></a></center></span>
+                <div class="containerx">
+					<input type="radio" name="slider" id="item-1" checked>
+					<input type="radio" name="slider" id="item-2">
+					<input type="radio" name="slider" id="item-3">
+				  <div class="cards">
+					<label class="cardt" for="item-1" id="col-img-1">
+					  <img src="./img/carousel-img1.jpg">
+					</label>
+					<label class="cardt" for="item-2" id="col-img-2">
+					  <img src="./img/carousel-img2.jpg">
+					</label>
+					<label class="cardt" for="item-3" id="col-img-3">
+					  <img src="./img/carousel-img3.jpg">
+					</label>
+				  </div>
+				</div>
+                <span id="about-quad"><a href="#home"><center><h1 style="font-family: var(--ff-montserrat); color: white;">Find that</h1><br><img class="img2" src="./img/mountain_dark.jpg" width="200" style="border-radius: 12%;"><br><h1 class="logo" style="font-size: 50px;">ADVENTURE</h1></a></center></span>
             </div>
         </div>
     </section>
