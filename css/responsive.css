@@ -44,6 +44,31 @@
     margin: 30px auto;
   }
 }
+
+@media screen and (max-width: 1440px) {
+	 .containerx {
+	  top: 40%;
+	  bottom: 40%;
+	  transform-style: preserve-3d;
+	}
+	
+	#about_us div {
+		padding: 10px;
+		display: block;
+		align-items: normal;
+	}
+	
+	.cards {
+		position: relative;
+		width: 90vw;
+		height: 100%;
+	}
+	
+	#about-quad {
+		display: none;
+	}
+}
+
 @media only screen and (max-width: 850px) {
   /*events*/
   .row {
