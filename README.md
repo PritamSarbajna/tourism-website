@@ -25,8 +25,7 @@ Adventure is your passport to explore the world's most exciting destinations and
 - Explore: Dive deep into our collection of curated travel guides, destination highlights, and traveler tips.
 - Tours: Find the perfect guided tours that match your interests and budget.
 - About: Learn more about the Adventure project, its mission, and the team behind it.
-- Contributions: We welcome contributions from the community to make Adventure even better. See our [Contribution Guidelines](https://github.com/PritamSarbajna/tourism-website/blob/main/CONTRIBUTING.md).
-- Contact Us: Have questions, suggestions, or just want to say hello? Reach out to us through our contact form.
+
  
 ## 👨‍💻 Contributing
 We welcome contributions from the open-source community.
