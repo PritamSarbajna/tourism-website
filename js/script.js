@@ -96,6 +96,8 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
 }
 
+
+
 // Update Navbar While Scrolling
 function updateNav() {
     const sections = document.querySelectorAll("section");
@@ -130,3 +132,5 @@ function updateNav() {
 }
 
 window.addEventListener("scroll", updateNav);
+
+ 
