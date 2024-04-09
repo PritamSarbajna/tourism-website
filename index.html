@@ -601,6 +601,16 @@
             menuBtn.addEventListener("click", () => {
                 navlinks.classList.toggle("mobile-menu");
             });
+
+            // Get all navigation links
+        const navLinksItems = document.querySelectorAll(".nav-links li a");
+
+        // Add click event listener to each navigation link
+        navLinksItems.forEach(function (link) {
+            link.addEventListener("click", function () {
+                navlinks.classList.remove("mobile-menu");
+            });
+        });
         </script>
         <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
         <script src="js/script.js"></script>
