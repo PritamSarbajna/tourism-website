@@ -25,6 +25,12 @@
     left: 15px;
   }
 
+  /*
+  - changed the width and height to cover the screen.
+  - changed the menu direction to the left, that makes it more responsive.
+  - removed the border radius because we don't need it since the menu covers the screen.
+  - added a smooth animation.
+   */
   .nav-links {
     flex-direction: column;
     width: 30vh;
