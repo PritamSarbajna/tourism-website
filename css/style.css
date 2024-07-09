@@ -57,6 +57,7 @@ body,
 html {
   overflow-x: hidden;
   box-sizing: border-box;
+  transition: all 0.5s ease; /* added transition to the switch theme functionality */
 }
 
 .container {
@@ -182,6 +183,7 @@ header {
   background: #fc036b;
   border-radius: 30px;
   color: whitesmoke;
+  transition: all 0.2s ease; /* added transitions to buttons */
 }
 
 .menu-btn {
