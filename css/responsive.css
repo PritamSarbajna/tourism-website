@@ -13,6 +13,7 @@
 @media screen and (max-width: 1130px) {
   .menu-btn {
     display: block;
+    z-index: 20;
   }
 
   .navbar {
@@ -40,6 +41,7 @@
     margin-right: -200%;
     margin-top: 85vh;
     transition: all 1s ease;
+    z-index: 20;
   }
 
   .mobile-menu {
