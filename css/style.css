@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;800&family=Parisienne&family=Roboto&family=Teko:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap");
 
+
 /* Root element (aka html) */
 :root {
   box-sizing: border-box;
@@ -32,6 +33,7 @@ img {
   max-width: 100%;
   display: block;
 }
+
 
 a {
   text-decoration: none;
