@@ -86,9 +86,9 @@ function scrollFunction() {
         document.body.scrollTop > 20 ||
         document.documentElement.scrollTop > 20
     ) {
-        mybutton.style.display = "block";
+        mybutton.style.opacity = "100%";
     } else {
-        mybutton.style.display = "none";
+        mybutton.style.opacity = "0%";
     }
 }
 function topFunction() {

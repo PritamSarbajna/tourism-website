@@ -779,14 +779,15 @@ body.dark{
   position: fixed; 
   z-index: 99;
   cursor: pointer; 
-  padding: 15px; 
+  padding: 2vmin; 
 	width: 8vmin;
 	height: 8vmin;
 	box-sizing: border-box;
-	left: 95%;
-	top: 86%;
+	right: 0px;
+	bottom: 0px;
+  margin: 1vw;
 	transform: rotate(-45deg);
-  
+  transition: opacity 0.15s ease-in-out;
 	
 	&::before {
 		content: '';
@@ -807,7 +808,7 @@ body.dark{
 		position: relative;
 		top: -86%;
 		width: 100%;
-		height: 100%;
+		height: 86%;
 		border-width: 0 .8vmin 0 0;
 		border-style: solid;
 		border-color:  #fff;
