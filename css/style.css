@@ -112,6 +112,7 @@ html {
 .nav-links {
   display: flex;
   align-items: center;
+  z-index: 1;
 }
 
 .nav-links li {
@@ -193,6 +194,7 @@ header {
   width: 40px;
   cursor: pointer;
   display: none;
+  z-index: 2;
 }
 
 /* Events */
